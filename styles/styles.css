@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .amazing-logo {
@@ -12,6 +13,36 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 992px) {
+  .card {
+    width: 100% !important;
+    flex: 0 0 auto;
+  }
+  .col {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+.card {
+  width: 400px;
+}
+
+.card-body p {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-text {
+  text-overflow: ellipsis;
+}
+
+.col {
+  display: flex;
+  justify-content: space-around;
+}
+
 .search-input {
   color: white;
   background: none;
@@ -57,13 +88,20 @@ a:link {
 
 .card-img-container {
   padding: 12px;
-  height: 60%;
+  height: 200px;
 }
 
 .card-img-container img {
   box-shadow: -8px -8px 5px 0px rgba(0, 0, 0, 0.48);
   object-fit: cover;
   height: 100%;
+}
+
+.bottom-card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
 }
 
 .d-flex p {

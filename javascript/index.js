@@ -173,20 +173,20 @@ const data = {
       price: 250,
     },
   ],
-};
+}
 
 // Recorrer el array de los eventos y obtener por un lado la fecha de base o de referencia y por el otro los eventos
 // Para la pagina index el loop debera generar un template dinamico, con tantos datos como objetos contenga el array
 // Dibujar las cards con .map
 
 const events = data.eventos.map((event) => {
-  return event.name;
-});
+  return event.name
+})
 
 function paintDom(eventos) {
-  let section = ``;
+  let section = ``
 
-  const tagToUpdate = document.getElementById("root");
+  const tagToUpdate = document.getElementById("root")
 
   for (let i = 0; i < data.eventos.length; i++) {
     section += `
@@ -206,9 +206,9 @@ function paintDom(eventos) {
                         </div>
                     </div>
                 </div>
-    `;
+    `
   }
-  tagToUpdate.innerHTML = section;
+  tagToUpdate.innerHTML = section
 }
 
-paintDom(events);
+paintDom(events)

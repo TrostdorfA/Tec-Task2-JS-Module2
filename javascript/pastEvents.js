@@ -201,7 +201,7 @@ function paintDom(eventos) {
                                 <p class="card-text">${data.eventos[i].description}</p>
                                 <div class="d-flex justify-content-between">
                                     <p>Price: ${data.eventos[i].price}</p>
-                                    <a href="./pages/details.html" target="_blank" class="btn btn-primary view">View
+                                    <a href="../pages/details.html" target="_blank" class="btn btn-primary view">View
                                         more...</a>
                                 </div>
                             </div>
