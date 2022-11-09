@@ -30,12 +30,12 @@
 }
 
 .card-body p {
-  white-space: nowrap;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .card-text {
-  text-overflow: ellipsis;
+  display: flex;
+  height: 40%;
 }
 
 .col {
